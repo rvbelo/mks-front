@@ -37,10 +37,8 @@ export const Box = styled.div`
 export const Div = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  padding: 0px 10px;
   @media (max-width: 768px) {
     justify-content: space-between;
     
@@ -77,7 +75,7 @@ export const Title = styled.text`
   line-height: 17px;
   padding-left: 21px;
   padding-right: 9px;
-  color: #2c2c2c;
+  color: ${({ theme }) => theme.color.boldGray};
   @media (max-width: 768px) {
     font-size: 18px;
     padding-left: 10px;
@@ -88,7 +86,7 @@ export const Title = styled.text`
 
 export const Price = styled.text`
   width: 100%;
-  max-width: 62px;
+  max-width: 70px;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -97,6 +95,7 @@ export const Price = styled.text`
     width: 98px;
     height: 34.5px;
     padding-top: 8px;
+    font-size: 14px;
     margin-bottom: 12px;
     border-radius: 5px;
     text-align: center;

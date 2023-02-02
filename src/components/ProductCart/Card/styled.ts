@@ -14,10 +14,10 @@ export const Content = styled.div`
 export const Div = styled.div`
   display: flex;
   width: 100%;
-  padding: 4px;
+  padding: 4px 2px;
   justify-content: start;
-  align-items: flex-start;
-  background: #ffffff;
+  align-items: center;
+  background: ${({ theme }) => theme.color.light};
   border: 0.3px solid #bfbfbf;
   border-radius: 4px;
   @media (max-width: 768px) {
@@ -43,14 +43,16 @@ export const Text = styled.text`
 
 export const Input = styled.input`
   width: 30px;
-  height: 15px;
+  height: 16px;
   border: none;
-  padding-left: 2px;
+  padding-left: 7px;
   font-weight: 400;
   font-size: 12px;
   line-height: 10px;
   color: ${({ theme }) => theme.color.dark};
   text-align: center;
+  border-right: 1px solid #a2a2be;
+  border-left: 1px solid #a2a2be;
   @media (max-width: 768px) {
     font-size: 18px;
     margin-top: 2px;
@@ -62,7 +64,7 @@ export const Button = styled.button`
   border: none;
   justify-content: center;
   cursor: pointer;
-  background: ${({ theme }) => theme.color.light};
+  background: #ffffff;
   &:hover {
     transition: ease 0.4s all;
     background: ${({ theme }) => theme.color.lighGray};

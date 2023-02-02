@@ -22,7 +22,8 @@ export const Box = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 10px;
   img {
     transition: all 500ms cubic-bezier(1, 0.01, 0, 1.07);
     transition-timing-function: cubic-bezier(1, 0.01, 0, 1.07);
@@ -65,7 +66,7 @@ export const Title = styled.text`
 font-weight: 400;
 font-size: 16px;
 line-height: 19px;
-color: #2C2C2C;
+color: ${({ theme }) => theme.color.boldGray};
 `
 
 export const ContainerPrice = styled.div`
@@ -73,7 +74,7 @@ padding: 4px 2px;
 width: 64px;
 height: 26px;
 text-align: center;
-background:#373737;
+background: ${({ theme }) => theme.color.gray};
 border-radius: 5px;
 `
 
@@ -81,7 +82,7 @@ export const Price = styled.text`
 font-weight: 700;
 font-size: 14px;
 line-height: 15px;
-color: #FFFFFF;
+color: ${({ theme }) => theme.color.light};
 `
 
 export const Description = styled.text`
@@ -89,7 +90,7 @@ font-weight: 300;
 font-size: 10px;
 line-height: 12px;
 padding: 0px 12px;
-color: #2C2C2C;
+color: ${({ theme }) => theme.color.boldGray};
 `
 
 export const Button = styled.button`
@@ -100,7 +101,7 @@ border: none;
 gap: 14px;
 justify-content: center;
 padding: 9px 0px;
-background: #0F52BA;
+background: ${({ theme }) => theme.color.blue};
 border-radius: 0px 0px 8px 8px;
 cursor: pointer;
   &:hover  {
@@ -119,5 +120,5 @@ export const Buy = styled.text`
 font-weight: 600;
 font-size: 14px;
 line-height: 18px;
-color: #FFFFFF;
+color: ${({ theme }) => theme.color.light};
 `

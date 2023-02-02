@@ -8,14 +8,13 @@ const CardProductCart = ({ data, onIncrementItem, onDecrementItem }) => {
       <Styled.Text>Qtd:</Styled.Text>
 
       <Styled.Div>
-        <Styled.Button onClick={() => onDecrementItem()}>
+        <Styled.Button onClick={() => onDecrementItem()} id="buttonDecrement">
           <Dash size={12} color="#000000" className="icon" />
         </Styled.Button>
 
-        <Styled.Input type="number" readOnly value={data.quantity} />
-        {/* repensar este compoentn inteiro */}
+        <Styled.Input type="number" readOnly value={data.quantity} id="quantity"/>
 
-        <Styled.Button onClick={() => onIncrementItem()}>
+        <Styled.Button onClick={() => onIncrementItem()} id="buttonIncrement">
           <Plus size={12} color="#000000" className="icon"/>
         </Styled.Button>
       </Styled.Div>

@@ -15,9 +15,10 @@ const theme = {
         light: '#FFFFFF',
         lighGray: '#E5E5E5',
         mediumGray: '#EEEEEE',
+        gray: '#373737',
+        boldGray: '#2C2C2C',
         blue: '#0F52BA', 
         Hoverblue: '#0b48a3', 
-        gray: '#373737',
         dark: '#000000',
     }
 }

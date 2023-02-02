@@ -2,16 +2,13 @@ import Card from "../Card";
 import * as Styled from "./styled";
 import { useEffect, useState } from "react";
 import { apiProduct } from "../../../services/api";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import  LoadingSkeleton  from '../../Loading'
 
 const Highlights = () => {
   const [loading, setLoading] = useState(false);
   const [product, setProduct] = useState([]);
   const dispatch = useDispatch();
-
-  function handleAddProduct() {
-    dispatch(CartActions.addProduct(product)); 
-  }
 
   const fetchAllData = () => {
     setLoading(true);
@@ -32,9 +29,9 @@ const Highlights = () => {
     fetchAllData();
   }, []);
 
-  return (
+   return (
     <Styled.Container>
-      {loading && !product && <p>Carrengando informações...</p>}
+      { !loading ? 
       <Styled.Row>
         {product &&
           product.map((item, key) => (
@@ -51,6 +48,7 @@ const Highlights = () => {
             />
           ))}
       </Styled.Row>
+      : <LoadingSkeleton/>}
     </Styled.Container>
   );
 };

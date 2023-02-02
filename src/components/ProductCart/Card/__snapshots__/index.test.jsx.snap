@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card component 1`] = `
+<div
+  className="sc-bcXHqe gnIGKw"
+>
+  <text
+    className="sc-dkrFOg dLamIx"
+  >
+    Qtd:
+  </text>
+  <div
+    className="sc-gswNZR bPxnGa"
+  >
+    <button
+      className="sc-eDvSVe kdkwdG"
+      id="buttonDecrement"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-sc-ea9ulj-0 dXOYdB icon"
+        color="#000000"
+        fill="currentColor"
+        focusable="false"
+        height={12}
+        viewBox="0 0 16 16"
+        width={12}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z"
+        />
+      </svg>
+    </button>
+    <input
+      className="sc-hLBbgP jxDUIY"
+      id="quantity"
+      readOnly={true}
+      type="number"
+    />
+    <button
+      className="sc-eDvSVe kdkwdG"
+      id="buttonIncrement"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-sc-ea9ulj-0 dXOYdB icon"
+        color="#000000"
+        fill="currentColor"
+        focusable="false"
+        height={12}
+        viewBox="0 0 16 16"
+        width={12}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
