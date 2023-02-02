@@ -1,6 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
-import type { PayloadAction } from "@reduxjs/toolkit";
-import type { RootState } from "../../store/store";
+import { PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "../../store/store";
 
 interface ItemReduxProps {
   id: number;
